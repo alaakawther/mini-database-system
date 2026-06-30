@@ -22,7 +22,6 @@ void addStudent()
         return;
     }
 
-
     fprintf(file, "%d,%s,%.2f\n",
             s.id,
             s.name,
