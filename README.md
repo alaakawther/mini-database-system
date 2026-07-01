@@ -1,90 +1,132 @@
 # Mini Database System in C
 
-A lightweight database management system built in C without using any external database engine.
-This project simulates a simple student database using structures and file handling to store and manage data permanently.
+A lightweight student database management system built in C using file-based storage.
 
-## Project Overview
+This project simulates a simple database system that allows users to manage student records through a command-line interface without using any external database engine.
 
-The goal of this project is to build a mini database system that allows users to manage student records through a command-line interface.
+---
 
-The project focuses on understanding:
+## Overview
 
-* Data organization
-* File storage
-* Memory management
-* Modular programming in C
+The goal of this project is to understand the fundamentals behind database systems by implementing data storage and management manually using C.
+
+The application uses structures to represent student records and files to store data permanently.
+
+---
 
 ## Features
 
-* Add new students
-* Display all students
-* Search for a student
-* Update student information
-* Delete student records
-* Save data permanently using files
-* Load existing data when starting the program
+- Add new students
+- Display student records
+- Store data permanently using files
+- Load existing records
+- Menu-based command-line interface
+
+---
 
 ## Technologies Used
 
-* C Programming Language
-* Structures (struct)
-* File Handling
-* Pointers
-* Dynamic Memory Management
-* Modular Programming
+- C Programming Language
+- Structures
+- File Handling
+- Pointers
+- Modular Programming
+- Git
+
+---
 
 ## Project Structure
-
-```
 Mini-Database-System/
-│
+
 ├── src/
-│   ├── main.c
-│   ├── student.c
-│   └── student.h
+│ ├── main.c
+│ ├── student.c
+│ └── student.h
 │
 ├── data/
-│   └── students.txt
+│ └── students.txt
 │
 ├── README.md
 └── .gitignore
-```
 
-## Concepts Practiced
+---
 
-This project helps practice:
+## How It Works
 
-* Creating and manipulating structures
-* Reading and writing files
-* Searching and updating stored data
-* Separating code into multiple files
-* Building a complete C application from scratch
+The program is divided into modules:
+
+- `main.c`
+  - Handles the user menu and program flow.
+
+- `student.h`
+  - Defines the student structure and function prototypes.
+
+- `student.c`
+  - Implements student management operations and file handling.
+
+- `students.txt`
+  - Stores student information permanently.
+
+---
+
+## Development Process
+
+### Day 1 - Project Setup
+
+- Created project structure
+- Designed student data model
+- Set up Git repository
+
+### Day 2 - File Management
+
+- Implemented writing and reading data from files
+- Added permanent storage system
+
+### Day 3 - Student Management System
+
+- Added student creation functionality
+- Added student display functionality
+- Improved code organization using multiple files
+
+### Day 4 - Finalization
+
+- Improved documentation
+- Cleaned project structure
+- Prepared the project for future extensions
+
+---
+
+## What I Learned
+
+- How to organize a C project using multiple files
+- How structures represent real-world data
+- How file handling enables data persistence
+- How basic database concepts work internally
+- How to manage projects using Git
+
+---
 
 ## Future Improvements
 
-Possible upgrades:
+- Add search functionality
+- Add update and delete operations
+- Add sorting features
+- Replace file storage with SQLite database
+- Create a graphical user interface
+- Add automated testing
 
-* Add authentication system
-* Add sorting functionality
-* Support multiple types of records
-* Improve user interface
-* Add data encryption
-* Create a graphical interface
+---
 
 ## How to Run
 
-Compile the project:
+Compile:
 
 ```bash
 gcc src/*.c -o database
-```
-
 Run:
 
-```bash
-./database
-```
-
+./student_system
 ## Author
 
-Created as a Computer Science project to improve C programming skills and understand how database systems work internally.
+Created by Alaa Zaiter.
+Developed as a personal project to practice C programming and database concepts.
