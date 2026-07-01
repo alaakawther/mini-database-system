@@ -37,7 +37,7 @@ The application uses structures to represent student records and files to store 
 
 ## Project Structure
 Mini-Database-System/
-
+```bash
 ├── src/
 │ ├── main.c
 │ ├── student.c
@@ -49,7 +49,7 @@ Mini-Database-System/
 ├── README.md
 └── .gitignore
 
----
+```
 
 ## How It Works
 
@@ -126,6 +126,7 @@ gcc src/*.c -o database
 Run:
 
 ./student_system
+```
 ## Author
 
 Created by Alaa Zaiter.
